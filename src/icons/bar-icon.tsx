@@ -1,6 +1,12 @@
 import React from "react";
 
-export const BarIcon = ({ className }: { className?: string }) => {
+export const BarIcon = ({
+  className,
+  onClick,
+}: {
+  className?: string;
+  onClick?: () => void;
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -11,6 +17,7 @@ export const BarIcon = ({ className }: { className?: string }) => {
       viewBox="0,0,256,256"
       fill="#000000"
       className={className}
+      onClick={onClick}
     >
       <g
         fill="#464040"
