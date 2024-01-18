@@ -39,10 +39,19 @@ export default function Home() {
         <h3 className="text-2xl font-bold mb-6">Articles</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3 justify-items-center">
           {Blogs.map((blog) => (
-            <div key={blog.id} className="flex flex-col items-start gap-3">
-              <Image src={blog.img} width={180} height={50} alt={blog.title} />
+            <div
+              key={blog.id}
+              className="w-full xs:w-[350px] md:w-auto flex flex-col items-start gap-3"
+            >
+              <Image
+                className="!object-cover w-full"
+                src={blog.img}
+                width={180}
+                height={50}
+                alt={blog.title}
+              />
               <div>
-                <h3 className=" text-sm font-semibold">{blog.title}</h3>
+                <h3 className="text-sm font-semibold">{blog.title}</h3>
                 <p className="text-xs">{blog.content}</p>
               </div>
             </div>

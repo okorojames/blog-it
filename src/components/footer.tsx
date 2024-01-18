@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <footer className="sticky bottom-0 min-h-[100px] flex flex-col justify-center bg-stone-900 text-white">
       <div className="flex justify-around flex-wrap">
-        <p className="text-sm">
+        <p className="text-[10px]">
           Copyright &copy; {new Date().getFullYear()}. All rights reserved.
         </p>
         <div className="flex flex-wrap justify-center items-center gap-3">
